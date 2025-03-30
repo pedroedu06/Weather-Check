@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="/assets/icons8-nuvem-100.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather Map</title>
+    
+    <!---links-->
+    <link rel="stylesheet" href="index.css">
+    <!--- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!---font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="conteiner">
+    <div class="form">
+        <h3>Verifique o clima da sua cidade!</h3>
+        <div class="input-info">
+            <input type="text" placeholder="Insira o nome da cidade" id="city-input">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <div id="weather-data" class="hide">
+        <h2>
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="city"></span>
+            <img src="https://flagcdn.com/w40/.png" alt="bandeira dos paises" id="country">
+        </h2>
+        <p id="temperatura"><span></span>&deg;C</p>
+        <div id="descrition-time">
+            <p id="descrition"></p>
+        </div>
+        <div id="detalhesTempo">
+            <p id="umidade">
+                <i class="fa-solid fa-droplet"></i>
+                <span></span>
+            </p>
+            <p id="wind">
+                <i class="fa-solid fa-wind"></i>
+                <span></span>
+            </p>
+        </div>
+    </div>
+</div>
+<script src="index.js" defer></script>
+</body>
+
+</html>
