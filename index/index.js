@@ -22,6 +22,7 @@ const weatherCotainer = document.querySelector(".hide")
 
 //funcao
 
+//pegar as coordenadas do local para obter a bandeira do pais
 const getCoordinates = async(lat, lon) => {
     const apiURL = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}`;
 
