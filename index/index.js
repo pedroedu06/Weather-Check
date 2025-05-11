@@ -1,6 +1,6 @@
 //dotenv
 async function getApiKey() {
-    const res = await fetch("http://localhost:3000/api-key");
+    const res = await fetch("/api-key");
     const data = await res.json();
     return data.apiKey;
 }
