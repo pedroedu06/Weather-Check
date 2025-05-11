@@ -14,5 +14,5 @@ app.get("/api-key", (req, res) =>{
     res.json({apiKey: process.env.API_KEY});
 })
 
-console.log("API_KEY:", process.env.API_KEY);
+
 app.listen(3000, () => console.log("servidor rodando na porta 3000!"));
